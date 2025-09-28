@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+streamlit
+psycopg2-binary
+sqlite-utils
+qdrant-client
+requests
