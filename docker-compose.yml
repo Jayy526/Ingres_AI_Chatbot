@@ -22,7 +22,10 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_DB: ingres
     ports: ["5432:5432"]
-    volumes: ["pg:/var/lib/postgresql/data"]
+    volumes: 
+      - "pg:/var/lib/postgresql/data"
+      - "./init-db:/docker-entrypoint-initdb.d"
+    command: ["postgres", "-c", "log_statement=all"]
 
   api:
     build: ./app

@@ -5,3 +5,7 @@ psycopg2-binary
 sqlite-utils
 qdrant-client
 requests
+matplotlib
+pandas
+openpyxl
+xlrd
